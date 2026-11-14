@@ -1,0 +1,10 @@
+__pycache__/
+build/
+dist/
+*.spec
+groq_keys.json
+config.json
+models/
+output/
+temp/
+ffmpeg.exe

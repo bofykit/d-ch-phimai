@@ -1,0 +1,5 @@
+customtkinter>=5.2.2
+groq>=0.11.0
+vieneu>=3.0
+sherpa-onnx>=1.10.30   # chỉ cần nếu dùng engine Sherpa
+numpy>=1.26
