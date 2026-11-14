@@ -30,7 +30,7 @@ jobs:
           Copy-Item (Get-ChildItem ffmpeg_tmp -Recurse -Filter ffmpeg.exe | Select-Object -First 1).FullName ffmpeg.exe
 
       - name: Build with PyInstaller
-        run: pyinstaller --noconfirm --windowed --name VideoTranslator --collect-all customtkinter --collect-all sherpa_onnx main.py
+        run: pyinstaller --noconfirm --windowed --name VideoTranslator --collect-all customtkinter --collect-all sherpa_onnx --collect-all vieneu --collect-all sea_g2p --collect-all onnxruntime main.py
 
       - name: Copy FFmpeg next to exe
         run: Copy-Item ffmpeg.exe dist\VideoTranslator\ffmpeg.exe
